@@ -1,0 +1,34 @@
+gói  src ;
+nhập  java.util.Scanner ;
+ lớp  công khai bai11 {
+    public  static  void  main ( String [] args ) {
+        Máy quét sc =  Máy quét mới  ( Hệ thống . In);
+        Hệ thống . ra ngoài . println ( " Nhap vao so phan tu cua mang: " );
+        int n = sc . nextInt ();
+        int arr [] =  new  int [n];
+        Hệ thống . ra ngoài . println ( " Nhap vao cac phan tu cua mang: \ n " );
+        for ( int i =  0 ; i < n; i ++ ) {
+            Hệ thống . ra ngoài . printf ( " a [% d] = " , + i);
+            arr [i] = sc . nextInt ();
+        }
+        Hệ thống . ra ngoài . println ( " Day so vua nhap la: " );
+        for ( int i =  0 ; i < n; i ++ ) {
+            Hệ thống . ra ngoài . printf (arr [i] +  "  " );
+        }
+        int temp = arr [ 0 ];
+        for ( int i =  0 ; i < arr . length -  1 ; i ++ ) {
+            for ( int j = i +  1 ; j < arr . length; j ++ ) {
+                if (arr [i] > arr [j]) {
+                    temp = arr [j];
+                    arr [j] = arr [i];
+                    arr [i] = tạm thời;
+                }
+            }
+        }
+        Hệ thống . ra ngoài . println ( " Day so duoc sap xep tang dan: " );
+        for ( int i =  0 ; i < arr . length; i ++ ) {
+            Hệ thống . ra ngoài . print (arr [i] +  "  " );
+        }
+        sc . đóng();
+    }
+}   
