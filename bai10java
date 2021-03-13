@@ -1,0 +1,27 @@
+  
+gói  SanPham ;
+
+ bảng mồi lớp  công khai {
+	Chuỗi tenSp =  " máy tính xách tay " ;
+	đôi donGia =  15000000 ;
+	double giamGia =  10 ;
+	static  double  getThueNhapKhau ( double  t )
+	{
+		return (t *  10 ) / 100 ;
+	}
+	void  xuat () {
+		Hệ thống . ra ngoài . println ( " Ten san pham: " +  this . tenSp);
+		Hệ thống . ra ngoài . println ( " Don gia: " +  this . donGia +  " $ " );
+		Hệ thống . ra ngoài . println ( " Giam gia: "  +  this . giamGia +  " % " );
+		
+	}
+
+	public  static  void  main ( String [] args ) {
+		baitap SanPham  =  mới baitap ();
+		SanPham . xuat ();
+		double thue = getThueNhapKhau ​​( 10 );
+		Hệ thống . ra ngoài . println ( " Thue nhap khau: "  + thue +  " $ " );
+	
+	}
+
+}
