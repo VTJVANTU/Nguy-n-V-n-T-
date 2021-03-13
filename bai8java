@@ -1,0 +1,22 @@
+gói  src ;
+nhập  java.util.Scanner ;
+ lớp  công khai bai8 {
+    public  static  void  main ( String [] args ) {
+        Máy quét sc =  Máy quét mới  ( Hệ thống . In);
+        Hệ thống . ra ngoài . println ( " Nhap vao so phan tu cua mang: " );
+        int n = sc . nextInt ();
+        float s =  0 ;
+        float arr [] =  new  float [n];
+        Hệ thống . ra ngoài . println ( " Nhap vao cac phan tu cua mang: \ n " );
+        for ( int i =  0 ; i < n; i ++ ) {
+            Hệ thống . ra ngoài . printf ( " a [% d] = " , i);
+            arr [i] = sc . nextInt ();
+        }
+        for ( int i = 0 ; i < arr . length; i ++ ) {
+            s = s + arr [i];
+        }
+        float tbc = s / arr . chiều dài;
+        Hệ thống . ra ngoài . println ( " trung binh cong la: "  + tbc);
+    sc . đóng();
+    }
+}
