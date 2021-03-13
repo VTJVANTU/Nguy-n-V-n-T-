@@ -1,0 +1,31 @@
+gói  src ;
+nhập  java.util.Scanner ;
+ bai9 public class  {
+    public  static  void  main ( String [] args ) {
+        Máy quét sc =  Máy quét mới  ( Hệ thống . In);
+        int hoa =  0 ;
+		int thuong =  0 ;
+		int so =  0 ;
+		Hệ thống . ra ngoài . println ( " Nhap vao chuoi ki tu bat ki: " );
+		String name =  new  String (sc . Next ());
+		for ( int i =  0 ; i < name . length (); i ++ ) {
+			kiểm tra char = tên . charAt (i);
+			if ( Ký tự . isDigit (kiểm tra)) {
+				vậy ++ ;
+			}
+			else  if ( Character . isUpperCase (kiểm tra)) {
+				hoa ++ ;
+			}
+			else  if ( Character . isLowerCase (kiểm tra)) {
+				thuong ++ ;
+			}
+		}
+		Hệ thống . ra ngoài . println ( " So ki tu hoa: " + hoa);
+		Hệ thống . ra ngoài . println ( " So ki tu so: " + so);
+		Hệ thống . ra ngoài . println ( " So ki tu thuong: " + thuong);
+	
+        sc . đóng();
+    }
+    
+
+}
