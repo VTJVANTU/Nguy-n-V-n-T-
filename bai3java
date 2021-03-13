@@ -1,0 +1,39 @@
+# Nguy-n-V-n-T-gói  mồi1 ;
+
+nhập  java.util.Scanner ;
+ lớp  công khai bai3 {
+    public  static  void  main ( String [] args ) {
+        matran mt =  new matran ();
+        mt . Nhap ();
+        mt . Hienthi ();
+    }
+    
+}
+ matran lớp {
+    private  int i, j, m, n, k;
+    private  static  int [] [] M =  new  int [ 9 ] [ 9 ];
+    
+    public  void  Hienthi () {
+        for (i = 0 ; i < n; i ++ ) {
+            for (j = 0 ; j < m; j ++ ) {
+                Hệ thống . ra ngoài . println ([i] [j] + " " );
+            }
+            Hệ thống . ra ngoài . println ();
+        }
+    
+    }
+    
+    public  void  Nhap () {
+        Quét máy quét =  Máy quét mới  ( Hệ thống . In);
+        Hệ thống . ra ngoài . println ( " Nhập số hàng: " );
+        n = quét . nextInt ();
+        Hệ thống . ra ngoài . println ( " Nhập số cột " );
+        m = quét . nextInt ();
+        for (i = 0 ; i < n; i ++ ) {
+            for (j = 0 ; j < m; j ++ ) {
+                Hệ thống . ra ngoài . println ( " Nhập ma trận M [ "  + i + " ] [ " + j + " ] = " );
+                M [i] [j] = quét . nextInt ();
+            }
+        }
+    }
+}
