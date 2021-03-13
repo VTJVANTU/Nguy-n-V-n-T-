@@ -1,0 +1,19 @@
+# Nguy-n-V-n-T-  
+gói  src ;
+
+nhập  java.util.Scanner ;
+
+ lớp  công khai bai5 {
+    public  static  void  main ( String [] args ) ném  Ngoại lệ {
+        int s =  0 ;
+        int n;
+        Máy quét sc =  Máy quét mới  ( Hệ thống . In);
+        làm {
+            Hệ thống . ra ngoài . println ( " nhap n: " );
+             n = sc . nextInt ();
+            s + = n;
+    } while (s <  100 );
+    sc . đóng();
+    Hệ thống . ra ngoài . println ( " Tong la: "  + s);
+    }
+}
