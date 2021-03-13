@@ -1,0 +1,45 @@
+ói  mồi1 ;
+
+nhập  java.util.Scanner ;
+ lớp  công khai bai2 {
+    public  static  void  main ( String [] args ) {
+        ThoiGian tg =  new  ThoiGian ();
+        tg . hamTao ( 0 , 0 , 0 );
+        tg . nhap ();
+        tg . xuat ();
+        tg . hamchuyen ();
+    }
+}
+lớp  ThoiGian {
+   
+    private  int gio, phut, giay;
+ 
+    int thứ hai;
+   
+    void  hamTao ( int  gio , int  phut , int  giay ) {
+    cái này . gio = gio;
+    cái này . phut = phut;
+    cái này . giay = giay;        
+    }
+   
+    void  nhap () {
+        Quét máy quét =  Máy quét mới  ( Hệ thống . In);
+      
+        Hệ thống . ra ngoài . println ( " Nhap gio: " );
+    
+        Hệ thống . ra ngoài . println ( " Nhap phut: " );
+        phut = quét . nextInt ();
+       
+        Hệ thống . ra ngoài . println ( " Nhap giay: " );
+        giay = quét . nextInt ();
+    }
+     void  xuat () {
+        Hệ thống . ra ngoài . println ( " Gia tri thoi gian: " + gio + " giờ, " + phut +  " minutes " + giay + " second " );
+    }
+  
+    void  hamchuyen () {
+        giây = gio * 3600  + phut * 60  + giay;
+        Hệ thống . ra ngoài . println ( " Move change time value "  + gio + " time, "  + phut + " minutes, " + giay +  " seconds ra seconds is: " + second + " seconds " );
+    }
+   
+}   
