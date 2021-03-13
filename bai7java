@@ -1,0 +1,13 @@
+  
+gói  src ;
+
+ lớp  công khai bai7 {
+    public  static  void  main ( String [] args ) {
+        int i = 0 ;
+        Hệ thống . ra ngoài . println ( " 20 so nguyen duong dau tien la: " );
+        for (i = 0 ; i < 21 ; i ++ ) {
+
+            Hệ thống . ra ngoài . println (i);
+        }
+    }
+}
