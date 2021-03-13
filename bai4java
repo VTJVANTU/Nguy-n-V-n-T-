@@ -1,0 +1,54 @@
+# Nguy-n-V-n-T-
+nhập  java.util.Scanner ;
+ lớp  công khai bai4 {
+    public  static  void  main ( String [] args ) {
+        SinhVien sv =  new  SinhVien ();
+        sv . nhap ();
+        sv . xuat ();
+        sv . tinhDiemtb ();
+    }
+}
+class  SinhVien {
+    
+    String hoten, gioitinh, lop;
+    int ngaysinh;
+    float diemtoan, diemly, diemhoa, dtb;
+    
+    void  nhap () {
+        Quét máy quét =  Máy quét mới  ( Hệ thống . In);
+       
+        Hệ thống . ra ngoài . println ( " Nhập họ và tên là: " );
+        hoten = quét . hàng tiếp theo();
+        
+        Hệ thống . ra ngoài . println ( " Nhập ngày sinh là: " );
+        ngaysinh = scan . nextInt ();
+       
+        Hệ thống . ra ngoài . println ( " Import into the feature is: " );
+        gioitinh = quét . hàng tiếp theo();
+       
+        Hệ thống . ra ngoài . println ( " Nhập lớp là: " );
+        lop = quét . hàng tiếp theo();
+        
+        Hệ thống . ra ngoài . println ( " Nhập vào điểm toán là: " );
+        diemtoan = quét . nextInt ();
+        
+        Hệ thống . ra ngoài . println ( " Import to the point is: " );
+        diemly = quét . nextInt ();
+        
+        Hệ thống . ra ngoài . println ( " Nhập vào điểm hoá là: " );
+        diemhoa = scan . nextInt ();
+    }
+    void  tinhDiemtb () {
+        dtb = (diemtoan + diemhoa + diemly) / 3 ;
+        Hệ thống . ra ngoài . println ( " Điểm trung bình là: " + dtb);
+    }
+    void  xuat () {
+        Hệ thống . ra ngoài . println ( " Họ tên sinh viên là: " + hoten);
+        Hệ thống . ra ngoài . println ( " Ngày sinh của viên là: " + ngaysinh);
+        Hệ thống . ra ngoài . println ( " Giới tính của sinh viên là: " + gioitinh);
+        Hệ thống . ra ngoài . println ( " Lớp của sinh viên là: " + lop);
+        Hệ thống . ra ngoài . println ( " Điểm toán của sinh viên là: " + diemtoan);
+        Hệ thống . ra ngoài . println ( " Điểm của sinh viên là: "  + diemly);
+        Hệ thống . ra ngoài . println ( " Điểm hóa của sinh viên là: " + diemhoa);
+        }
+}
