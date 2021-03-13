@@ -1,0 +1,17 @@
+gói  src ;
+nhập  java.util.Scanner ;
+ lớp  công khai bai6 {
+    public  static  void  main ( String [] args ) {
+        Máy quét sc =  Máy quét mới  ( Hệ thống . In);
+        Hệ thống . ra ngoài . println ( " Nhap vao mot so nguyen duong: " );
+        int a = sc . nextInt ();
+        int b =  1 ;
+        int i =  1 ;
+        làm {
+            b * = i;
+            i ++ ;
+        } while (i <= a);
+        Hệ thống . ra ngoài . println ( " Giai thua la: " + b);
+        sc . đóng();
+    }
+}
