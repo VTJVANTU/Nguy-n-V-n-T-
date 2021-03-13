@@ -1,0 +1,54 @@
+gói  mồi1 ;
+
+nhập  java.util.Scanner ;
+nhập  java.util.Math ;
+ lớp  công khai bai1 {
+    public  static  void  main ( String [] args ) {
+        DIEM diem =  new  DIEM ();
+        công tác phí . nhap ();
+        công tác phí . xuat ();
+        công tác phí . diemDoixung ();
+        công tác phí . khoangCachhaidiem ();
+        công tác phí . kiemTra ();
+    }
+}
+lớp  DIEM {
+    
+    int x, y;
+   
+    int x1, y1;
+  
+    đồng bằng kép , dttamgiac;
+    Quét máy quét =  Máy quét mới  ( Hệ thống . In);
+  
+    void  nhap () {
+        Hệ thống . ra ngoài . println ( " Nhap vao hoanh do x: " );
+        x = quét . nextInt ();
+        Hệ thống . ra ngoài . println ( " Nhap vao tung do y: " );
+        y = quét . nextInt ();
+    }
+  
+    void  xuat () {
+        Hệ thống . ra ngoài . println ( " Toa do cua diem la: ( " + x +  " , "  + y + " ) " );
+    }
+   
+    void  diemDoixung () {
+        x1 = x;
+        y1 =  - y;
+        Hệ thống . ra ngoài . println ( " Toa do cua diem doi xung la: ( "  + x1 + " , "  + y1 + " ) " );
+    }
+   
+    void  khoangCachhaidiem () {
+        delta =  Toán học . sqrt ( Math . pow ((x1 - x), 2 ) +  Math . pow ((y1 - y), 2 ));
+        Hệ thống . ra ngoài . println ( " Khoang cach giua hai diem la: "  + delta);
+    }
+   
+    void  kiemTra () {
+        nếu (x == 0  || y == 0 ) {
+            Hệ thống . ra ngoài . println ( " Diem nay nam tren truc toa do " );
+        } khác {
+            Hệ thống . ra ngoài . println ( " Diem nay khong nam tren truc toa do " );
+            dttamgiac =  0.5  * delta * x;
+            Hệ thống . ra ngoài . println ( " Dien tich tam giac: "  + dttamgiac);
+        }
+    }
